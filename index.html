@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mask Detection for COVID19</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navigation">
+   <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Mask Detection for COVID19</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      </ul>
+   </div>
+</nav>
+<div class="container">
+   <div class="file-field input-field">
+      <div class="btn">
+         <span>file</span>
+         <input type="file" accept="image/*" id="capture" capture="camera"> 
+      </div>
+      <div class="file-path-wrapper">
+         <input class="file-path validate" type="text">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col l4 xl4"></div>
+      <div class="picture col s12 l4 m12 xl4">
+         <div id="picturepreview">
+            <img id="predictedpicture" src="" alt="" />
+         </div>
+      </div>
+      <div class="col l4 xl4"></div>
+   </div>
+   <div class="row">
+      <div class="col l4 xl4">
+      </div>
+      <div class="button col s12 l4 m12 xl4">
+         <div class="predictbutton">
+            <button id="button" class="waves-effect waves-light btn-large center-align" type="submit" name="action">predict
+            <i class="material-icons right">send</i>
+            </button>
+         </div>
+      </div>
+      <div class="col l4 xl4">
+      </div>
+   </div>
+   <div class="row">
+      <div class="col l4 xl4"></div>
+      <div class="col col s12 l4 m12 xl4">
+         <table class="centered" id="myTable">
+            <thead>
+               <tr>
+                  <th>Result</th>
+                  <th>Accuracy</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+      </div>
+      <div class="col l4 xl4"></div>
+   </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

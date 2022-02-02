@@ -1,0 +1,37 @@
+#navigation {
+	background-color: teal;
+}
+
+#picturepreview {
+	text-align: center;
+}
+
+#predictedpicture {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.picture.col.m12 {
+	float: none;
+}
+
+.picture.col.l4 {
+	float: left;
+}
+
+.button.col.m12 {
+	float: none;
+}
+
+.button.col.l4 {
+	float: left;
+}
+
+.predictbutton {
+	text-align: center;
+}
+
+td {
+	text-align: center;
+}
